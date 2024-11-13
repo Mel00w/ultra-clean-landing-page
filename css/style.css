@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background-color: rgb(184, 175, 163, 0.25); 
+}
+  
+p, li {
+    color: #333;
+}
+
+b {
+    color: black;
+    font-weight: 800;
+}
+
+.flex {
+    display: flex;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    max-width: 1600px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3% 0;
+    display: flex;
+    font-family: "Inria Serif", serif;
+}
+
+a.button {
+    background-color: #95A595;
+    color: white;
+	display: inline-block;
+	height: 90px;
+	line-height: 90px;
+    padding: 0 5%;
+	font-size: 1.5rem;
+    text-decoration: none;
+    margin: auto;
+    border-radius: 45%;
+	transition: all .2s ease;
+}
+
+.button:hover {
+    background-color: #bfd3bf;  
+      box-shadow: 4px 4px 10px #333;
+}
+
+#left {
+    padding-left: 5%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header h1 {
+font-size: 3.1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#title{
+ text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#propriety {
+    margin: 5% 0;
+    font-size: 1.2rem;
+    white-space: wrap;
+
+}
+
+#propriety li {
+margin: 5% 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+#stape img {
+    position: absolute;
+    right: 100%;
+    top: -15px;
+}
+
+#stape li {
+    margin: 5% 0 8% 0;
+    position: relative;
+    left: 50px;
+    }
+    
+#img-demo img{
+width: 20%;
+margin: 0 8% 0 -5%;
+}
+
+#big-pen {
+flex-direction: column;
+}
+
+#big-pen img {
+    width: 350px;
+}
+
+#big-pen a {
+    margin-left: 3%;
+}
+
+#right {
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#avis{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #afafaf54;
+    border-radius: 15%;
+}
+
+h5 {
+margin: 5% 0;
+background-color: #afafaf54;
+ font-size: 1.2rem;
+ padding: 1%;
+ border: #333 solid 1px;
+ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+ border-radius: 20%;
+}
+
+#avis figure {
+display: flex;
+margin: 3% 0 0 8%;
+}
+
+#avis div figure > img {
+margin: -3% 0 0 -12%;
+}
+
+#avis div {
+    margin-left: 8%;
+    flex-wrap: wrap;
+    padding: 0 2%;
+}
+
+.margin-bottom {
+    margin-bottom: 5%;
+}
+
+.little-button {
+    background-color: #95a5957e;
+    color: black;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+    padding: 0 5%;
+	font-size: 0.6rem;
+    text-decoration: none;
+    margin: auto;
+    border-radius: 20%;
+	transition: all .2s ease;
+}
+
+.little-button:hover {
+    background-color: #bfd3bf;  
+      box-shadow: 4px 4px 10px #333;
+}
+
+#avis a {
+    margin-bottom: 4%;
+}
+#price{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#price p {
+    font-size: 0.6rem ;
+    text-align: right;
+}
+
+h2 {
+    font-size: 3.1rem;
+    font-weight: 700 ;
+    text-align: center;
+}
+
+#faq {
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    background-color: #afafaf54;
+    border-radius: 20%;
+    padding-bottom: 8%;
+    margin-top: 5%;
+
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin: 8% auto;
+}
