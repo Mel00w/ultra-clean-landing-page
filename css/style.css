@@ -39,10 +39,15 @@ b {
     display: flex;
 }
 
+
 .box {
     display: flex;
-    flex-direction: row;
 }
+
+
+@media (max-width: 1000px)
+{    .box {flex-direction: column;}}
+
 .container {
     max-width: 1600px;
     width: 100%;
@@ -56,13 +61,13 @@ a.button {
     background-color: #95A595;
     color: white;
 	display: inline-block;
-	height: 90px;
-	line-height: 90px;
+	height: 5.625rem;
+	line-height: 5.625rem;
     padding: 0 5%;
 	font-size: 1.5rem;
     text-decoration: none;
     margin: auto;
-    border-radius: 45%;
+    border-radius: 3.125rem;
 	transition: all .2s ease;
 }
 
