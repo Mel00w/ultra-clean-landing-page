@@ -21,9 +21,13 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+a {
+    cursor: url('../img/target-scope.png'), auto;
+}
 
 body {
     background: linear-gradient(to right, #ffe4e1, #fffaf0, #ffe4e1);
+    cursor: url(../img/le-curseur-16.png), auto;
 }
   
 p, li {
@@ -205,13 +209,20 @@ justify-content: space-between;
 #avis:hover{
     box-shadow: 2px 2px 5px #33333346;
 }
+
+#avis div {
+transform: scale(1);
+transition: all .3s ease;
+}
+
 #avis div:hover {
-    background-color: #f7d8d8;
+    background-color: #f7dddd;
+    transform: scale(1.2);
 }
 
 h5 {
 margin: 5% 0;
-background-color: #ff6e615e;
+background-color: #f7d8d8;
  font-size: 1.2rem;
  padding: 1%;
  border: #333 solid 1px;
@@ -249,16 +260,19 @@ margin: -3% 0 0 -12%;
 	height: 1.875rem;
 	line-height: 1.875rem;
     padding: 0 5%;
-	font-size: 0.6rem;
+	font-size: 0.8rem;
     text-decoration: none;
     margin: auto;
     border-radius: 3.125rem;
 	transition: all .2s ease;
+    margin-top: 5%;
+    font-weight: 600;
 }
 
 .little-button:hover {
     background-color: #ff9f91;  
       box-shadow: 4px 4px 10px #333;
+      font-size: 0.9rem;
 }
 
 #avis a {
@@ -290,7 +304,7 @@ h2 {
     margin:auto;
     background-color: #eddbd94f;
     border-radius: 20%;
-    margin-top: 65%;
+    margin-top: 10%;
 
 }
 
@@ -322,13 +336,24 @@ h3 {
 
 #img-demo {
     margin: 5% 0 0 10%;
+
+}
+
+#avis div:hover {
+    background-color: #f7dddd;
+    transform: scale(1);
 }
 
 }
 
-#propriety li, #stape li {
-    opacity: 0;
-    transform: translateX(-20px);
-    animation: slideIn 0.5s forwards;
+
+video{
+    width: 40%;
+    padding: 10% 0 0 30%;
+    transform: scale(1);
+    transition: all .3s ease;
 }
 
+video:hover {
+    transform: scale(1.3);
+}
