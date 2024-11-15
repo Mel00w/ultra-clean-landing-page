@@ -66,6 +66,7 @@ b {
 }
 
 a.button {
+    text-transform: uppercase;
     background-color: #ff6f61;
     color: white;
 	display: inline-block;
@@ -85,8 +86,8 @@ a.button {
 }
 
 #left {
+    padding-left: 3%;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -96,6 +97,7 @@ header a {
 
 header h1 {
 font-size: 3.1rem;
+font-weight: 600;
 color: #ff6f61;
 }
 header p {
@@ -108,7 +110,7 @@ ul {
 #title {
  text-align: center;
  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
- background-color: #eddbd94f;
+ border: #77777717 1px solid;
  border-radius: 1.6rem;
  transition: all .5s ease;
 
@@ -120,9 +122,9 @@ ul {
 }
 
 #propriety {
-    margin: 5% 0;
     font-size: 1.2rem;
     white-space: wrap;
+    margin: 20% 0 0 0;
 
 }
 
@@ -130,53 +132,50 @@ ul {
 margin: 5% 0;
 }
 
-@keyframes slideIn {
-    to {
-        opacity: 1;
-    }
-}
-
-#propriety li:nth-child(1) { animation-delay: 0.2s; }
-#propriety li:nth-child(2) { animation-delay: 0.4s; }
-#propriety li:nth-child(3) { animation-delay: 0.6s; }
-#propriety li:nth-child(4) { animation-delay: 0.8s; }
-
 
 h4 {
+    margin-bottom: 20%;
+    text-transform: uppercase;
     font-size: 1.5rem;
     color: #ff6f61;
+    font-weight: 500;
 }
-
+#stape {
+    margin-left: 30%;
+}
 #stape img {
     position: absolute;
-    right: 100%;
-    top: -0.938rem;
+    right: 115%;
+    top: -0.940rem;
 }
 
 
 #stape li {
+    text-transform: uppercase;
     margin-top: 15%;
     position: relative;
     left: 3.125rem;
     }
     
-#img-demo img{
-width: 25%;
-margin: 0 3% 0 0;
-
-transition: all .2s ease;
+video{
+    width: 35%;
+    margin: 10% 0 0 30%;
+    transform: scale(1);
+    border-radius: 3.8rem;
+    opacity: 80%;
+    transition: all .3s ease;
 }
 
-#img-demo img:hover {
+video:hover {
     transform: scale(1.1);
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px #33333346;
 }
+
 
 #big-pen {
 margin-top: 2%;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
 }
 
 @keyframes float {
@@ -188,32 +187,31 @@ justify-content: space-between;
 #big-pen img {
     width: 21.875rem;
     animation: float 4s ease-in-out infinite;
+    margin-bottom: 20%;
 }
 
+
 #right {
-    padding-right: 5%;
+    padding-right: 3%;
     display: flex;
     flex-direction: column;
 }
 
 #avis{
+    margin-top: 15%;
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #eddbd94f;
+    border: #cac8c8bb 1px solid;
     border-radius: 15%;
-    transition: all .2 ease;
+    transition: all .3s ease;
+    font-size: .8rem;
+    margin-top: 30%;
 }
-
-
 #avis:hover{
     box-shadow: 2px 2px 5px #33333346;
 }
 
-#avis div {
-transform: scale(1);
-transition: all .3s ease;
-}
 
 #avis div:hover {
     background-color: #f7dddd;
@@ -226,7 +224,6 @@ background-color: #f7d8d8;
  font-size: 1.2rem;
  padding: 1%;
  border: #333 solid 1px;
-
  border-radius: 20%;
  transition: all .2s ease;
 }
@@ -234,23 +231,38 @@ background-color: #f7d8d8;
 h5:hover{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
 }
+
+
 #avis figure {
 display: flex;
 margin: 3% 0 0 8%;
+
 }
 
+#avis > figure > img {
+    width: 40%;
+}
+
+
 #avis div figure > img {
-margin: -3% 0 0 -12%;
+margin: -2% 0 0 -12%;
+width: 30%;
 }
 
 #avis div {
     margin-left: 8%;
     flex-wrap: wrap;
     padding: 0 2%;
+    transform: scale(1);
+    transition: all .3s ease;
 }
 
 .margin-bottom {
     margin-bottom: 5%;
+}
+
+#avis a {
+    margin-bottom: 4%;
 }
 
 .little-button {
@@ -265,7 +277,6 @@ margin: -3% 0 0 -12%;
     margin: auto;
     border-radius: 3.125rem;
 	transition: all .2s ease;
-    margin-top: 5%;
     font-weight: 600;
 }
 
@@ -275,13 +286,9 @@ margin: -3% 0 0 -12%;
       font-size: 0.9rem;
 }
 
-#avis a {
-    margin-bottom: 4%;
-}
 #price{
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
 
 }
 
@@ -302,26 +309,26 @@ h2 {
     display: flex;
     flex-direction: column;
     margin:auto;
-    background-color: #eddbd94f;
     border-radius: 20%;
-    margin-top: 10%;
+    margin-top: 25%;
 
 }
 
 #faq img {
     width: 90%;
-    margin: 0 auto 3% 5%;
+    margin: 4% auto 3% 5%;
+    transition: all .3s ease;
 }
 
 #faq img:hover {
-    transform: rotate(5deg) scale(1.1);
-    transition: transform 0.2s ease;
+    transform: scale(1.2);
 }
 
 h3 {
     font-size: 2.5rem;
     margin: 5% auto 2% auto;
 }
+
 
 
 @media (max-width: 1000px)
@@ -346,14 +353,3 @@ h3 {
 
 }
 
-
-video{
-    width: 40%;
-    padding: 10% 0 0 30%;
-    transform: scale(1);
-    transition: all .3s ease;
-}
-
-video:hover {
-    transform: scale(1.3);
-}
