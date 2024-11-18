@@ -53,6 +53,7 @@ b {
 {    .box {
     display: flex;
     flex-direction: column;
+    padding-top: 10rem; /* Ajoute une marge pour compenser la hauteur de #title */
 }
 }
 
@@ -187,7 +188,8 @@ align-items: center;
 #big-pen img {
     width: 21.875rem;
     animation: float 4s ease-in-out infinite;
-    margin-bottom: 20%;
+    margin-bottom: 30%;
+    margin-top: 30%;
 }
 
 
@@ -289,7 +291,6 @@ width: 30%;
 #price{
     display: flex;
     flex-direction: column;
-
 }
 
 #price p {
@@ -310,8 +311,6 @@ h2 {
     flex-direction: column;
     margin:auto;
     border-radius: 20%;
-    margin-top: 25%;
-
 }
 
 #faq img {
@@ -350,6 +349,34 @@ h3 {
     background-color: #f7dddd;
     transform: scale(1);
 }
+
+        #big-pen {
+        order: 1; 
+    }
+
+    #left {
+        order: 2; 
+    }
+
+    #right {
+        order: 3;
+    }
+
+#title {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0; 
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+
 
 }
 
